@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #0c2461;
+}
+header h1{
+    color: #ffff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0px ;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+.container{
+    padding: 0px;
+    margin: 0 auto;
+    width: 80%;
+}
+.recipe-list{
+    list-style: none;
+    margin-top: 30px;
+
+}
+.recipe-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7.5px rgba(0,0,0,0.2), -5px -5px 7.5px rgba(0,0,0,0.2);
+}
+.recipe-list li img{
+    width: 15%;
+    height: 150px;
+    border-radius: 5px;
+    object-fit:cover;
+    background-color: #040404;
+    transition: opacity 0.3s ease-in-out;
+}
+.recipe-list li h2 {
+    width: 20%;
+    text-align: left;
+    background-color: #0000;
+    color: #00000;
+    font-size: 1.5rem;
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+.recipe-list li p {
+    font-size: 1rem;
+    width: 55%;
+    color: #393939;
+    text-align: left;
+    padding: 10px;
+}
+.recipe-list li a{
+    text-decoration: none;
+    width: 10%;
+    background-color: #0c2461;
+    color: #fff;
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 2px 2px 5px #0c2461;
+    transition: all 0.2s ease-in-out;
+    font-size: small;
+}
+.recipe-list li a:hover{
+    background-color: #153994;
+}
+.recipe-list li img:hover{
+    opacity: 0.80;
+}
+
+@media screen and (max-width: 852px) {
+    .container{
+        width: 85%;
+    }
+    .recipe-list li{
+        flex-direction: column;
+    }
+    .recipe-list li img{
+        width: 100%;
+        height: 10%;
+    }
+    .recipe-list li h2{
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .recipe-list li p{
+        width: 100%;
+        padding: 10px;
+    }
+    .recipe-list li a{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 0 0 10PX 10PX;
+    }
+}
