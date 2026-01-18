@@ -6,7 +6,7 @@ function displayRecipes(recipes) {
     recipes.forEach((recipe)=> {
         
         const recipeList = document.getElementById("recipe-list");
-
+ 
         const recipeItem = document.createElement("li");
         recipeItem.classList.add("recipe-item");
 
