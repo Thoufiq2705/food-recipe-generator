@@ -7,7 +7,7 @@ function displayRecipes(recipes) {
         
         const recipeList = document.getElementById("recipe-list");
  
-        const recipeItem = document.createElement("li");
+        const recipeItem = document.createElement("li");   
         recipeItem.classList.add("recipe-item");
 
         const recipeImg = document.createElement("img");
